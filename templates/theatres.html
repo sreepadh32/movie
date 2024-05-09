@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Theatres</title>
+    <link rel="stylesheet" type="text/css" href="../static/tstyle.css">
+</head>
+<body>
+    <h1>Theatres</h1>
+    {% for theatre in theatres %}
+        <h3>{{ theatre[1] }}</h3>
+        <a href="/seats/{{ theatre[0] }}">Select Seats</a>
+    {% endfor %}
+    <br>
+    <a href="/movies">Back to Movies</a> | <a href="/logout">Logout</a>
+</body>
+</html>

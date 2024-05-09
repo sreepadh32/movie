@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Seats</title>
+    <link rel="stylesheet" type="text/css" href="../static/seatstyle.css">
+
+</head>
+<body>
+    <h1>Seats</h1>
+    
+    {% for seat in seats %}
+    <div class="seat"><h3>{{ seat[1] }}</h3>
+        <a href="/confirm/{{ seat[0] }}">Book</a></div>
+    {% endfor %}
+    <br>
+    <a href="/movies">Back to Movies</a> | <a href="/logout">Logout</a>
+</body>
+</html>
